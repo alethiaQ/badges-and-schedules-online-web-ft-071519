@@ -14,7 +14,7 @@ end
 def assign_rooms(list)
   room_array = []
   list.each_with_index do |speaker, index|
-    room_array << "Hello, #{speaker}! You'll be assigned to room #{index}!"
+    room_array << "Hello, #{speaker}! You'll be assigned to room #{index + 1}!"
   end
   room_array
 end
