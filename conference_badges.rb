@@ -19,7 +19,11 @@ def assign_rooms(list)
   room_array
 end
 
-def printer(attendees)
-  puts batch_badge_creator(attendees).first
-  puts assign_rooms(attendees).first
+def printer
+  batch_badge_creator.each do |item|
+    puts item
+  end
+  room_array.each do |assignment|
+    puts assignment
+  end
 end
